@@ -1,6 +1,5 @@
 @charset "UTF-8";
 //
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 @import "./variables";
 
 *,
@@ -10,21 +9,23 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body,
 input,
 button {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased !important;
-}
-
-body {
-  background: $background-color;
 }
 
 ul {
@@ -40,6 +41,10 @@ ul {
 figure {
   margin: 0;
   padding: 0;
+}
+
+picture {
+  display: contents;
 }
 
 a {

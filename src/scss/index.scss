@@ -1,14 +1,73 @@
+/*
+ *  MAIN PAGE CSS
+ *
+ *  1. IMPORTS
+ *  2. HEADER
+ *  3. ABOUT FINANCE
+ */
 
+
+/*
+ * 1. IMPORTS
+ */
 @import 'variables';
 @import 'default';
+@import 'common';
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  padding-bottom: 1000px;
 }
 
-h1 {
-  font-size: 80px;
+/*
+ * 2. HEADER
+ */
+@import "./header";
+
+
+/*
+ * 3. ABOUT FINANCE
+ */
+
+#section-about-finance {
+  position: relative;
+  z-index: 50;
+  top: -140px;
+  margin: 0 auto;
+  margin-bottom: -140px;
+  width: 90%;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 64px 80px;
+  background: #fff;
+  box-shadow: 0px 3px 6px 0px rgba(#000,0.16);
+  border-radius: 10px;
+  h2 {
+    width: 40%;
+    max-width: 280px;
+    letter-spacing: -2px;
+    font-size: 48px;
+    line-height: 58px;
+    color: $title-color;
+    margin: 0;
+  }
+  .text {
+    width: 60%;
+    max-width: 460px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    p {
+      margin: 0;
+      font-weight: 300;
+      color: #707070;
+      line-height: 2;
+    }
+    .btn {
+      margin-top: 32px;
+    }
+  }
 }

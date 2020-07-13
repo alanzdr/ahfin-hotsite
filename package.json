@@ -1,8 +1,8 @@
 {
-  "name": "base_html_workspace",
+  "name": "ahfin-hotsite",
   "version": "1.0.0",
   "main": "index.html",
-  "repository": "https://github.com/alanzdr/base_html_workspace.git",
+  "repository": "https://github.com/alanzdr/ahfin-hotsite.git",
   "author": "alanzdr <alandersonzelindrodr@gmail.com>",
   "license": "MIT",
   "browserslist": [

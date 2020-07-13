@@ -1,19 +1,23 @@
 // 1. THEMING
-// primary
-$primary-color: #DE356B !default;
-$primary-color-light: lighten($primary-color, 15%) !default;
-$primary-color-dark: darken($primary-color, 15%) !default;
-// secondary
-$secondary-color: #1976d2 !default;
-$secondary-color-light: lighten($secondary-color, 15%) !default;
-$secondary-color-dark: darken($secondary-color, 15%) !default;
+// pink
+$pink-color: #DF346C !default;
+$pink-color-light: lighten($pink-color, 15%) !default;
+$pink-color-dark: darken($pink-color, 15%) !default;
+// blue
+$blue-color: #1D89C0 !default;
+$blue-color-light: lighten($blue-color, 15%) !default;
+$blue-color-dark: darken($blue-color, 15%) !default;
+// purple
+$purple-color: #584D98 !default;
+$purple-color-light: lighten($purple-color, 15%) !default;
+$purple-color-dark: darken($purple-color, 15%) !default;
 //
-$success-color: #4caf50 !default;
+$success-color: #1D89C0 !default;
 $error-color: #f44336 !default;
-$link-color: $primary-color !default;
+$link-color: $pink-color !default;
 //
-$title-color: $primary-color !default;
-$text-color: #12161F !default;
+$text-color: #47484A !default;
+$title-color: #47484A !default;
 $background-color: #FFFCEE !default;
 
 // 3. KEYFRAME TEMPLATE
