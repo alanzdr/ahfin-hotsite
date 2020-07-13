@@ -1,0 +1,34 @@
+// 1. THEMING
+// primary
+$primary-color: #DE356B !default;
+$primary-color-light: lighten($primary-color, 15%) !default;
+$primary-color-dark: darken($primary-color, 15%) !default;
+// secondary
+$secondary-color: #1976d2 !default;
+$secondary-color-light: lighten($secondary-color, 15%) !default;
+$secondary-color-dark: darken($secondary-color, 15%) !default;
+//
+$success-color: #4caf50 !default;
+$error-color: #f44336 !default;
+$link-color: $primary-color !default;
+//
+$title-color: $primary-color !default;
+$text-color: #12161F !default;
+$background-color: #FFFCEE !default;
+
+// 3. KEYFRAME TEMPLATE
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+

@@ -1,0 +1,14 @@
+
+@import 'variables';
+@import 'default';
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 80px;
+}

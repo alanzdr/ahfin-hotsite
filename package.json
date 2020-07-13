@@ -1,0 +1,24 @@
+{
+  "name": "base_html_workspace",
+  "version": "1.0.0",
+  "main": "index.html",
+  "repository": "https://github.com/alanzdr/base_html_workspace.git",
+  "author": "alanzdr <alandersonzelindrodr@gmail.com>",
+  "license": "MIT",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
+  "scripts": {
+    "sass": "sass --watch src/scss:assets/css --style compressed",
+    "script": "babel --watch src/js --out-dir assets/js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-flow": "^7.10.1",
+    "babel-preset-minify": "^0.5.1"
+  }
+}
