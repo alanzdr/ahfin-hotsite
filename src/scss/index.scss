@@ -4,6 +4,8 @@
  *  1. IMPORTS
  *  2. HEADER
  *  3. ABOUT FINANCE
+ *  4. HOW WORK
+ *  5. EXCLUSIVE BENEFITS
  */
 
 
@@ -70,6 +72,226 @@ body {
     }
     .btn {
       margin-top: 32px;
+    }
+  }
+}
+
+/*
+ * 4. HOW WORK
+ */
+
+#section-how-work {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  .flow-start {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    img {
+      width: 226px;
+    }
+    p {
+      width: calc(50% - 113px);
+      margin: 0;
+      margin-top: 40px;
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 30px;
+      &.left {
+        text-align: left;
+        strong {
+          color: $pink-color;
+        }
+      }
+      &.right {
+        text-align: right;
+        strong {
+          color: $blue-color;
+        }
+      }
+    }
+  }
+  .flow-title {
+    font-size: 48px;
+    text-align: center;
+    margin: 16px 0;
+    letter-spacing: -4px;
+  }
+  .flow {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../../assets/img/backgrounds/how-work-lines.png');
+    background-repeat: repeat-y;
+    background-position: center top;
+    padding-top: 7px;
+    padding-bottom: 120px;
+    .item {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+      .number {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #DF346C;
+        color: #fff;
+        font-size: 25px;
+        line-height: 1;
+        font-weight: bold;
+        border-radius: 25px;
+        &:after {
+          width: 59px;
+          height: 1px;
+          background: #DF346C;
+          content: ' ';
+          display: block;
+          position: absolute;
+          top: 50%;
+        }
+      }
+      .text {
+        width: calc(50% - 108px);
+        margin: 0;
+        position: relative;
+        p {
+          margin: 0;
+          width: 321px;
+          max-width: 100%;
+          font-size: 16px;
+          line-height: 2;
+          font-weight: 300;
+        }
+        &:after {
+          width: 1px;
+          height: 100%;
+          background: #DF346C;
+          content: ' ';
+          display: block;
+          position: absolute;
+          top: 0;
+          // transform: translateY(-1px);
+        }
+      }
+      &.left {
+        flex-direction: row-reverse;
+        .number {
+          margin-left: 83px;
+          margin-right: auto;
+          &:after {
+            left: -59px;
+          }
+        }
+        .text {
+          p {
+            margin-left: auto;
+            text-align: right;
+          }
+          &:after {
+            right: -24px;
+          }
+        }
+      }
+      &.right {
+        flex-direction: row;
+        .number {
+          margin-left: auto;
+          margin-right: 83px;
+          &:after {
+            right: -59px;
+          }
+        }
+        .text {
+          p {
+            margin-right: auto;
+          }
+          &:after {
+            left: -24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*
+ * 5. EXCLUSIVE BENEFITS
+ */
+#section-exclusive-benefits {
+  padding-top: 132px;
+  padding-bottom: 120px;
+  position: relative;
+  overflow: hidden;
+  .background {
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .content {
+    position: relative;
+    z-index: 10;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      // justify-content: flex-start;
+      h2 {
+        color: #fff;
+        font-size: 48px;
+        line-height: 58px;
+        margin: 0; 
+      }
+      h3 {
+        color: #C4A7FF;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0;
+        margin-top: 8px;
+      }
+      .btn {
+        margin-top: 32px;
+      }
+    }
+    .right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      p {
+        margin: 0;
+        color: #C4A7FF;
+        font-size: 16px;
+        line-height: 1.2;
+        &.font {
+          font-size: 12px;
+          color: #9078C1;
+          margin-top: 8px;
+        }
+      }
+      h4 {
+        font-size: 56px;
+        line-height: 68px;
+        color: #fff;
+        margin: 16px 0; 
+      }
     }
   }
 }
