@@ -6,6 +6,7 @@
  *  3. ABOUT FINANCE
  *  4. HOW WORK
  *  5. EXCLUSIVE BENEFITS
+ *  5. EXCLUSIVE BENEFITS
  */
 
 
@@ -292,6 +293,44 @@ body {
         color: #fff;
         margin: 16px 0; 
       }
+    }
+  }
+}
+
+/*
+ * 6. FINANCIAL EDUCATION
+ */
+#section-financial-education {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1100px;
+  margin: 80px auto;
+  h2 {
+    width: 240px;
+    letter-spacing: -3px;
+  }
+  img {
+    width: 347px;
+    margin: 0 40px;
+  }
+  .text {
+    .top-text {
+      font-weight: 300;
+      line-height: 2;
+      letter-spacing: 0.3px;
+      margin: 0;
+      color: #707070;
+    }
+    .sub-text {
+      font-size: 12px;
+      font-weight: 300;
+      margin: 0;
+      margin-top: 24px;
+      color: #B5B5B5;
+      line-height: 1;
     }
   }
 }
