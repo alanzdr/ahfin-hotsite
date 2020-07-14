@@ -1,12 +1,17 @@
 /*
  *  MAIN PAGE CSS
  *
- *  1. IMPORTS
- *  2. HEADER
- *  3. ABOUT FINANCE
- *  4. HOW WORK
- *  5. EXCLUSIVE BENEFITS
- *  5. EXCLUSIVE BENEFITS
+ *  1.  IMPORTS
+ *  2.  HEADER
+ *  3.  ABOUT FINANCE
+ *  4.  HOW WORK
+ *  5.  EXCLUSIVE BENEFITS
+ *  6.  FINANCIAL EDUCATION
+ *  7.  FINANCIAL HEALTH
+ *  8.  MAKE DIFFERENCE 
+ *  9.  FORM CONTAINER
+ *   9.1 FORM
+ *  10. FOOTER 
  */
 
 
@@ -16,10 +21,6 @@
 @import 'variables';
 @import 'default';
 @import 'common';
-
-body {
-  padding-bottom: 1000px;
-}
 
 /*
  * 2. HEADER
@@ -331,6 +332,369 @@ body {
       margin-top: 24px;
       color: #B5B5B5;
       line-height: 1;
+    }
+  }
+}
+
+/*
+ * 6. HR BONUS
+ */
+#section-hr-bonus {
+  position: relative;
+  z-index: 50;
+  background: #fff;
+  box-shadow: 0px 3px 6px 0px rgba(#000,0.16);
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: -150px;
+  padding: 60px 80px;
+  // padding-top: 64px;
+  width: 90%;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  h2 {
+    width: 50%;
+    max-width: 330px;
+    margin-left: 16px;
+    letter-spacing: -2px;
+    font-size: 48px;
+    line-height: 58px;
+    color: $title-color;
+    margin: 0;
+  }
+  .text {
+    width: 50%;
+    max-width: 427px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    p {
+      margin: 0;
+      font-weight: 300;
+      color: #707070;
+      line-height: 2;
+    }
+  }
+}
+
+/*
+ * 7. FINANCIAL HEALTH
+ */
+#section-financial-health {
+  position: relative;
+  width: 100%;
+  padding-top: 18.82%;
+  padding-bottom: 90px;
+  overflow: hidden;
+  .background-container {
+    .background {
+      position: absolute;
+      z-index: 0;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 101%;
+      min-height: 100%;
+    }
+    .background-text {
+      position: absolute;
+      top: 0;
+      left: 8px;
+      z-index: 10;
+      width: calc(100% - 16px);
+      opacity: 0.15;
+    }
+  }
+  .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 40;
+    .top-text {
+      margin: 0;
+      color: #fff;
+      font-weight: 300;
+      line-height: 2;
+      max-width: 720px;
+    }
+    .logo {
+      margin: 24px 0;
+    }
+    .sub-text {
+      margin: 0;
+      color: #ddd;
+      font-weight: 300;
+      line-height: 2;
+      max-width: 720px;
+    }
+    .btn {
+      margin-top: 24px;
+    }
+  }
+}
+
+/*
+ * 8. MAKE DIFFERENCE 
+ */
+#section-make-difference {
+  position: relative;
+  padding: 220px 0;
+  overflow: hidden;
+  .background {
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 48%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    max-width: calc(100% - 32px);
+  }
+  .content {
+    position: relative;
+    z-index: 10;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    h2 {
+      width: 60%;
+      max-width: 520px;
+      letter-spacing: -4px;
+      span {
+        color: $pink-color;
+      }
+    }
+    .text {
+      p {
+        margin: 4px 0;
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 1.2;
+        letter-spacing: -4px;
+        span {
+          margin-right: 8px;
+        }
+        &.blue {
+          color: $blue-color;
+        }
+        &.pink {
+          color: $pink-color;
+        }
+        &.purple {
+          color: $purple-color;
+        }
+      }
+    }
+  }
+}
+
+/*
+ * 9. FORM CONTAINER
+ */
+#section-form {
+  position: relative;
+  width: 100%;
+  padding-top: 8.13%;
+  padding-bottom: 13.18%;
+  overflow: hidden;
+  .background {
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 101%;
+    min-height: 100%;
+  }
+  .content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    z-index: 10;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    .text {
+      margin-top: 24px;
+      width: 50%;
+      max-width: 460px;
+      h2 {
+        margin: 0;
+        color: #fff;
+        letter-spacing: -3px;
+      }
+      p {
+        margin: 0;
+        margin-top: 56px;
+        line-height: 2;
+        max-width: 306px;
+        font-weight: 300;
+        color: #fff;
+      }
+    }
+  }
+}
+
+/*
+ * 9.1. FORM
+ */
+
+#content-form {
+  width: 50%;
+  max-width: 390px;
+  margin-left: auto;
+  .input-container {
+    position: relative;
+    width: 100%;
+    height: 56px;
+    background: #fff;
+    border-radius: 8px;
+    margin-top: 12px;
+    label {
+      position: absolute;
+      top: 18px;
+      left: 20px;
+      color: #41538E;
+      font-weight: 300;
+      z-index: 2;
+      pointer-events: none;
+      transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    input, select {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      background: 0;
+      display: flex;
+      align-items: center;
+      color: #584D98;
+      font-size: 16px;
+      padding: 0 20px;
+      padding-top: 10px;
+      font-weight: bold;
+      border-radius: 8px;
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover, 
+      &:-webkit-autofill:focus {
+        border: 0;
+        background-color: transparent !important;
+        -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+        box-shadow: 0 0 0px 1000px #fff inset;
+        -webkit-text-fill-color: #584D98 !important;
+      }
+    }
+    select {
+      padding-left: 16px;
+    }
+    &.focus {
+      label {
+        top: 10px;
+        font-size: 10px;
+      }
+    }
+  }
+  .form-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+    .message {
+      width: 220px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      p {
+        margin-left: 10px;
+        font-size: 10px;
+        color: #fff;
+        line-height: 16px;
+      }
+    }
+    .btn {
+      .spinner {
+        position: relative;
+        width: 0px;
+        height: 0px;
+        margin-left: 0px;
+        transition: all .3s;
+      }
+      .spinner:before {
+        content: '';
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 2px solid transparent;
+        border-radius: 50%;
+        animation: spinner 1s linear infinite;
+        transition: border-top-color .3s;
+      }
+      &:disabled {
+        .spinner {
+          width: 16px;
+          height: 16px;
+          margin-left: 8px;
+        }
+        .spinner:before {
+          border-top-color: #fff;
+        }
+      }
+    }
+  }
+}
+
+/*
+ * 10. FOOTER
+ */
+footer {
+  padding: 88px 0;
+  background: #EFEFEF;
+  width: 100%;
+  .content {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .text {
+      margin-left: auto;
+      display: flex;
+      flex-direction: column;
+      a {
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        &:first-of-type {
+          margin-bottom: 8px;
+        }
+        span {
+          font-size: 16px;
+          margin-left: 8px;
+          color: #47484A;
+          font-weight: 500;
+          transition: color 300ms ease-out;
+        }
+        &:hover {
+          span {
+            color: $pink-color;
+          }
+        }
+      }
     }
   }
 }
