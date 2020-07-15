@@ -337,6 +337,69 @@ header {
       font-size: 32px;
       margin-top: 56px;
     }
+    .flow {
+      padding-top: 0;
+      padding-bottom: 64px;
+      background-image: url('../../assets/img/backgrounds/how-work-lines-mobile.png');
+      background-repeat: no-repeat;
+      background-position: 14.5px 90px;
+      .item {
+        display: flex;
+        margin-top: 32px;
+        .number {
+          width: 32px;
+          height: 32px;
+          font-size: 16px;
+          &:after {
+            width: 16px;
+          }
+        }
+        .text {
+          width: calc(100% - 64px);
+          p {
+            width: 100%;
+          }
+        }
+        &.left {
+          flex-direction: row;
+          .number {
+            margin-left: 0;
+            margin-right: auto;
+            &:after {
+              left: auto;
+              right: -16px;
+            }
+          }
+          .text {
+            p {
+              margin-left: 0;
+              text-align: left;
+            }
+            &:after {
+              left: -16px;
+              right: auto;
+            }
+          }
+        }
+        &.right {
+          .number {
+            margin-left: 0;
+            margin-right: auto;
+            &:after {
+              right: -16px;
+            }
+          }
+          .text {
+            p {
+              margin-left: 0;
+            }
+            &:after {
+              left: -16px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -354,7 +417,7 @@ header {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
+    min-width: 100%;
     min-height: 100%;
   }
   .content {
@@ -371,7 +434,6 @@ header {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      // justify-content: flex-start;
       h2 {
         color: #fff;
         font-size: 48px;
@@ -409,6 +471,55 @@ header {
         line-height: 68px;
         color: #fff;
         margin: 16px 0; 
+      }
+      .btn {
+        display: none;
+      }
+    }
+  }
+  @media screen and (max-width: 1000px) { 
+    padding-top: 64px;
+    padding-bottom: 48px;
+    position: relative;
+    overflow: hidden;
+    .content {
+      max-width: 100%;
+      flex-direction: column;
+      .left {
+        text-align: center;
+        align-items: center;
+        h2 {
+          font-size: 32px;
+          line-height: 40px;
+        }
+        h3 {
+          font-size: 16px;
+          margin-top: 16px;
+        }
+        .btn {
+          display: none;
+        }
+      }
+      .right {
+        // display: flex;
+        // flex-direction: column;
+        align-items: center;
+        text-align: center;
+        p {
+          &:first-of-type {
+            margin-top: 32px;
+          }
+          &.font {
+            margin-top: 16px;
+          }
+        }
+        h4 {
+          margin: 8px 0; 
+        }
+        .btn {
+          display: flex;
+          margin-top: 32px;
+        }
       }
     }
   }
@@ -450,6 +561,28 @@ header {
       line-height: 1;
     }
   }
+  @media screen and (max-width: 1000px) { 
+    flex-direction: column;
+    margin: 48px auto;
+    text-align: center;
+    h2 {
+      font-size: 32px;
+      width: auto;
+      margin: 0 40px;
+    }
+    img {
+      width: auto;
+      max-width: 260px;
+      margin: 16px auto;
+    }
+    .text {
+      margin-top: 32px;
+      .sub-text {
+        margin: 0 40px;
+        margin-top: 24px;
+      }
+    }
+  }
 }
 
 /*
@@ -464,7 +597,6 @@ header {
   margin: 0 auto;
   margin-bottom: -150px;
   padding: 60px 80px;
-  // padding-top: 64px;
   width: 90%;
   max-width: 1100px;
   display: flex;
@@ -494,6 +626,9 @@ header {
       color: #707070;
       line-height: 2;
     }
+  }
+  @media screen and (max-width: 1000px) { 
+    
   }
 }
 
