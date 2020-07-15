@@ -73,7 +73,7 @@ header {
       margin: 0;
       margin-top: 24px;
       max-width: 90%;
-      font-weight: 600;
+      font-weight: 700;
       color: #fff;
     }
   }
@@ -617,9 +617,6 @@ header {
     width: 50%;
     max-width: 427px;
     margin-left: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     p {
       margin: 0;
       font-weight: 300;
@@ -627,8 +624,27 @@ header {
       line-height: 2;
     }
   }
-  @media screen and (max-width: 1000px) { 
-    
+  @media screen and (max-width: 1000px) {
+    margin-bottom: -110px;
+    padding: 40px 32px;
+    flex-direction: column;
+    text-align: center;
+    h2 {
+      width: 100%;
+      max-width: 220px;
+      margin-left: 0;
+      font-size: 32px;
+      line-height: 1.2;
+    }
+    .text {
+      width: 100%;
+      max-width: 100%;
+      margin-left: 0;
+      margin-top: 32px;
+      p {
+        line-height: 1.5;
+      }
+    }
   }
 }
 
@@ -648,7 +664,7 @@ header {
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      width: 101%;
+      min-width: 100%;
       min-height: 100%;
     }
     .background-text {
@@ -667,6 +683,8 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 90%;
+    margin: 0 auto;
     z-index: 40;
     .top-text {
       margin: 0;
@@ -687,6 +705,31 @@ header {
     }
     .btn {
       margin-top: 24px;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    padding-top: 180px;
+    padding-bottom: 72px;
+    .background-container {
+      .background-text {
+        display: none;
+      }
+    }
+    .content {
+      .top-text {
+        line-height: 1.5;
+        margin: 0 16px;
+      }
+      .logo {
+        margin: 32px 0;
+      }
+      .sub-text {
+        margin: 0 20px;
+        line-height: 20px;
+      }
+      .btn {
+        margin-top: 24px;
+      }
     }
   }
 }
@@ -747,6 +790,32 @@ header {
       }
     }
   }
+  @media screen and (max-width: 1000px) {
+    padding: 60px 0;
+    .background {
+      height: 100%;
+      left: 0;
+      transform: translateY(-50%);
+      max-width: none;
+    }
+    .content {
+      padding: 0 24px;
+      flex-direction: column;
+      h2 {
+        width: 100%;
+        font-size: 24px;
+        letter-spacing: -1px;
+        text-align: center;
+      }
+      .text {
+        margin-top: 32px;
+        p {
+          font-size: 24px;
+          letter-spacing: 0px;
+        }
+      }
+    }
+  }
 }
 
 /*
@@ -764,7 +833,7 @@ header {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 101%;
+    min-width: 100%;
     min-height: 100%;
   }
   .content {
@@ -793,6 +862,43 @@ header {
         color: #fff;
       }
     }
+    form {
+      width: 50%;
+      max-width: 390px;
+      margin-left: auto;
+
+    }
+  }
+  
+  @media screen and (max-width: 1000px) {
+    padding: 64px 0;
+    .content {
+      flex-direction: column;
+      .text {
+        margin-top: 0;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        h2 {
+          margin: 0 40px;
+          font-size: 24px;
+          line-height: 32px;
+          letter-spacing: -1px;
+        }
+        p {
+          margin: 0 16px;
+          margin-top: 32px;
+          line-height: 1.5;
+          max-width: 100%;
+        }
+      }
+      form {
+        margin: 0 auto;
+        margin-top: 48px;
+        width: 100%;
+        max-width: 480px;
+      }
+    }
   }
 }
 
@@ -801,9 +907,6 @@ header {
  */
 
 #content-form {
-  width: 50%;
-  max-width: 390px;
-  margin-left: auto;
   .input-container {
     position: relative;
     width: 100%;
@@ -865,6 +968,7 @@ header {
       display: flex;
       flex-direction: row;
       align-items: center;
+      padding-right: 24px;
       p {
         margin-left: 10px;
         font-size: 10px;
@@ -944,6 +1048,20 @@ footer {
           span {
             color: $pink-color;
           }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    padding: 64px 0;
+    .content {
+      flex-direction: column;
+      .text {
+        margin: 0;
+        margin-top: 48px;
+        align-items: center;
+        a {
+          padding: 4px;
         }
       }
     }
