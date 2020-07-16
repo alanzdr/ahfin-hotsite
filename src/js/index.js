@@ -108,8 +108,8 @@ function handleWithFormSubmit() {
 
     fetchSend(url, data, () => {
       formSubmit.removeAttribute('disabled');
-      const { protocol, host } = window.location;
-      const link = `${protocol}//${host}/obrigado`
+      const { protocol, host, pathname } = window.location;
+      const link = `${protocol}//${host}${pathname}obrigado`
       window.location.href = link;
     })
 
