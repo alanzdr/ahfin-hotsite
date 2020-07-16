@@ -91,7 +91,7 @@ function handleWithFormSubmit() {
     const formData = onGetData();
     const url = "https://www.rdstation.com.br/api/1.3/conversions";
     const rdInfo = {
-      token_rdstation: "2c578585f136bfae3c27379bb6ee61b5",
+      token_rdstation: "",
       identificador: '',
       origem: window.location.href,
     }
