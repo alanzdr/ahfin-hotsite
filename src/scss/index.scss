@@ -177,19 +177,22 @@ header {
   max-width: 1100px;
   margin: 0 auto;
   .flow-start {
+    position: relative;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-top: 40px;
-    img {
-      width: 226px;
+    padding-top: 96px;
+    padding-bottom: 112px;
+    .center-image {
+      width: 300px;
     }
     p {
       width: calc(50% - 113px);
       margin: 0;
-      margin-top: 40px;
+      // margin-top: 40px;
+      letter-spacing: -1px;
       font-size: 24px;
       font-weight: bold;
       line-height: 30px;
@@ -206,11 +209,18 @@ header {
         }
       }
     }
+    .lines {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+    }
   }
   .flow-title {
     font-size: 48px;
     text-align: center;
     margin: 16px 0;
+    margin-top: 8px;
     letter-spacing: -4px;
   }
   .flow {
@@ -218,7 +228,7 @@ header {
     position: relative;
     display: flex;
     flex-direction: column;
-    background-image: url('../../assets/img/backgrounds/how-work-lines.png');
+    background-image: url('../../assets/img/lines/how-work-lines.svg');
     background-repeat: repeat-y;
     background-position: center top;
     padding-top: 7px;
@@ -317,8 +327,9 @@ header {
       display: flex;
       flex-direction: column;
       margin-top: 48px;
-      img {
-        width: 162px;
+      .center-image {
+        width: 100%;
+        max-width: 375px;
         margin: 24px 0;
       }
       p {
@@ -332,6 +343,9 @@ header {
           text-align: center;
         }
       }
+      .lines {
+        display: none;
+      }
     }
     .flow-title {
       font-size: 32px;
@@ -340,7 +354,7 @@ header {
     .flow {
       padding-top: 0;
       padding-bottom: 64px;
-      background-image: url('../../assets/img/backgrounds/how-work-lines-mobile.png');
+      background-image: url('../../assets/img/lines/how-work-lines-mobile.svg');
       background-repeat: no-repeat;
       background-position: 14.5px 90px;
       .item {
@@ -424,7 +438,7 @@ header {
     position: relative;
     z-index: 10;
     width: 90%;
-    max-width: 960px;
+    max-width: 1100px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -438,6 +452,7 @@ header {
         color: #fff;
         font-size: 48px;
         line-height: 58px;
+        letter-spacing: -2px;
         margin: 0; 
       }
       h3 {
@@ -455,22 +470,26 @@ header {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      p {
-        margin: 0;
-        color: #C4A7FF;
-        font-size: 16px;
-        line-height: 1.2;
-        &.font {
-          font-size: 12px;
-          color: #9078C1;
-          margin-top: 8px;
+      .box {
+        max-width: 380px;
+        padding: 40px 56px;
+        background: #fff;
+        text-align: center;
+        border-radius: 10px;
+        p {
+          font-size: 32px;
+          margin: 0;
+          color: #707070;
+          line-height: 1.2;
+          letter-spacing: -3px;
+          strong {
+            color: #47484A;
+          }
+          span {
+            color: #DF346C;
+            font-weight: bold;
+          }
         }
-      }
-      h4 {
-        font-size: 56px;
-        line-height: 68px;
-        color: #fff;
-        margin: 16px 0; 
       }
       .btn {
         display: none;
@@ -537,14 +556,18 @@ header {
   max-width: 1100px;
   margin: 80px auto;
   h2 {
+    margin: 0;
+    margin-left: 56px;
     width: 240px;
     letter-spacing: -3px;
   }
   img {
-    width: 347px;
-    margin: 0 40px;
+    width: auto;
+    // margin: 0 40px;
   }
   .text {
+    max-width: 440px;
+    margin-left: auto;
     .top-text {
       font-weight: 300;
       line-height: 2;
@@ -565,17 +588,19 @@ header {
     flex-direction: column;
     margin: 48px auto;
     text-align: center;
+    img {
+      width: auto;
+      max-width: 120px;
+      margin: 0 auto;
+    }
     h2 {
       font-size: 32px;
       width: auto;
       margin: 0 40px;
-    }
-    img {
-      width: auto;
-      max-width: 260px;
-      margin: 16px auto;
+      margin-top: 16px;
     }
     .text {
+      margin: 0 auto;
       margin-top: 32px;
       .sub-text {
         margin: 0 40px;
