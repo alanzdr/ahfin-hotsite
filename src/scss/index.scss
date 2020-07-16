@@ -928,6 +928,12 @@ header {
  * 9.1. FORM
  */
 
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 #content-form {
   .input-container {
     position: relative;
