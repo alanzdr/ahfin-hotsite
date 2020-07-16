@@ -510,6 +510,8 @@ header {
         h2 {
           font-size: 32px;
           line-height: 40px;
+          margin: 0 20px;
+          letter-spacing: 0;
         }
         h3 {
           font-size: 16px;
@@ -520,24 +522,19 @@ header {
         }
       }
       .right {
-        // display: flex;
-        // flex-direction: column;
+        .box {
+          max-width: 280px;
+          margin: 48px auto;
+          padding: 32px;
+          p {
+            font-size: 24px;
+            letter-spacing: -1px;
+            line-height: 30px;
+          }
+        }
         align-items: center;
-        text-align: center;
-        p {
-          &:first-of-type {
-            margin-top: 32px;
-          }
-          &.font {
-            margin-top: 16px;
-          }
-        }
-        h4 {
-          margin: 8px 0; 
-        }
         .btn {
           display: flex;
-          margin-top: 32px;
         }
       }
     }
