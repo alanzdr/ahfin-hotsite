@@ -326,7 +326,7 @@ header {
     .flow-start {
       display: flex;
       flex-direction: column;
-      margin-top: 48px;
+      padding: 48px 0;
       .center-image {
         width: 100%;
         max-width: 375px;
@@ -349,7 +349,7 @@ header {
     }
     .flow-title {
       font-size: 32px;
-      margin-top: 56px;
+      margin-top: 16px;
     }
     .flow {
       padding-top: 0;
