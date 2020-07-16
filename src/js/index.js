@@ -106,9 +106,11 @@ function handleWithFormSubmit() {
 
     formSubmit.setAttribute('disabled', true);
 
-    fetchSend(url, data, (response) => {
+    fetchSend(url, data, () => {
       formSubmit.removeAttribute('disabled');
-      alert('ola')
+      const { protocol, host } = window.location;
+      const link = `${protocol}//${host}/obrigado`
+      window.location.href = link;
     })
 
     return false;
