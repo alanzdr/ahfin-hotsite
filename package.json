@@ -21,6 +21,5 @@
     "@babel/preset-flow": "^7.10.1",
     "babel-preset-minify": "^0.5.1",
     "sass": "^1.26.10"
-  },
-  "dependencies": {}
+  }
 }

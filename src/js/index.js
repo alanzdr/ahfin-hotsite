@@ -4,27 +4,27 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function fetchSend (url, data, cb) {
-  setTimeout(cb, 2000);
-  // if ("fetch" in window) {
-  //   fetch(url, {
-  //     method: 'POST',
-  //     headers: {
-  //       'Accept': 'application/json',
-  //       'Content-Type': 'application/json'
-  //     },
-  //     body: JSON.stringify(data)
-  //   })
-  //     .then(cb)
-  //     .catch(err => {
-  //       console.log(err);
-  //     })
-  // } else {
-  //   const req = new XMLHttpRequest();
-  //   req.open('POST', url, false);
-  //   req.setRequestHeader("Content-Type", "application/json");
-  //   req.onload = cb;
-  //   req.send(JSON.stringify(data));
-  // }
+  // setTimeout(cb, 2000);
+  if ("fetch" in window) {
+    fetch(url, {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+      .then(cb)
+      .catch(err => {
+        console.log(err);
+      })
+  } else {
+    const req = new XMLHttpRequest();
+    req.open('POST', url, false);
+    req.setRequestHeader("Content-Type", "application/json");
+    req.onload = cb;
+    req.send(JSON.stringify(data));
+  }
 }
 
 function getSearchParams () {
@@ -72,36 +72,26 @@ function handleWithFormSubmit() {
   const getUTM = () => {
     const utm = {};
     if (params.utm_source) {
-      utm.traffic_source = params.utm_source;
+      utm.utm_source = params.utm_source;
     }
     if (params.utm_medium) {
-      utm.traffic_medium = params.utm_medium;
+      utm.utm_medium = params.utm_medium;
     }
     if (params.utm_campaign) {
-      utm.traffic_campaign = params.utm_campaign;
+      utm.utm_campaign = params.utm_campaign;
     }
-    if (params.utm_term) {
-      utm.traffic_value = params.utm_term;
-    }  
     return utm;
   }
 
   const onSubmit = (event) => {
     event.preventDefault();
     const formData = onGetData();
-    const url = "https://www.rdstation.com.br/api/1.3/conversions";
-    const rdInfo = {
-      token_rdstation: "",
-      identificador: '',
-      origem: window.location.href,
-    }
-
     const utm = getUTM();
+    const url = 'https://us-central1-sower-283917.cloudfunctions.net/ahfin-webemail-send';
 
     const data = {
-      ...rdInfo,
-      ...utm,
       ...formData,
+      utm
     }
 
     formSubmit.setAttribute('disabled', true);
